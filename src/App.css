@@ -243,5 +243,9 @@
 }
 .cardsign{
   margin-left: 400px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;  
 
 }
