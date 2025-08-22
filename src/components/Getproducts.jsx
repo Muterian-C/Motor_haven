@@ -700,7 +700,7 @@ const Getproducts = () => {
                                         "0 8px 25px rgba(16, 185, 129, 0.3)";
                                     }}
                                   >
-                                    <i className="fas fa-cart-plus me-2"></i>
+                                    <i className="fas fa-cart-plus me-2">Add to Cart</i>
                                     
                                   </button>
 
