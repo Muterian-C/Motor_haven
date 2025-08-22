@@ -241,3 +241,7 @@
   object-fit: cover;  /* 👈 ensures images fill while keeping proportions */
   width: 100%;        /* always span full width */
 }
+.cardsign{
+  margin-left: 400px;
+
+}
