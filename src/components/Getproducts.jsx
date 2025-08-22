@@ -139,7 +139,7 @@ const Getproducts = () => {
               letterSpacing: "-0.02em",
             }}
           >
-            MoToR____HAVEN
+            MoToR_HAVEN
           </h1>
           <p
             className="fs-2 text-light mb-4"
@@ -673,7 +673,7 @@ const Getproducts = () => {
                                   ).toLocaleString()}
                                 </span>
                                 <div className="d-flex gap-3">
-                                <button
+                                  <button
                                 className="btn w-50 py-3 fw-semibold"
                                 style={{
                                   background:
