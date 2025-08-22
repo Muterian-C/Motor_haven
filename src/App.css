@@ -1,0 +1,243 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: rgb(191, 9, 118);
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.product_img {
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+}
+.logo {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.footer {
+  background-color: rgb(236, 81, 226);
+}
+
+.carousel-item {
+  height: 20vh;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.head {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 600;
+  font-style: inherit;
+}
+
+/* when you hover on it the button changes color */
+.color {
+  background-color: white;
+}
+.color:hover {
+  background-color: rgb(191, 9, 118);
+}
+/* when you hover around the image it increase the size */
+.product_img:hover {
+  /* snippet below enlarges the image by 10% */
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+}
+.mpesa {
+  color: green;
+}
+
+.btn-success {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.btn-success:hover {
+  background-color: #146c43;
+  border-color: #146c43;
+}
+
+/* Search Bar Styles */
+.search-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-wrapper {
+  transition: all 0.3s ease;
+  border: 2px solid transparent !important;
+}
+
+.search-wrapper:focus-within {
+  border-color: #0d6efd !important;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15) !important;
+  transform: translateY(-2px);
+}
+
+.search-input {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.search-input:focus {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.search-icon-wrapper {
+  color: #6c757d;
+}
+
+.clear-btn {
+  padding: 4px 8px;
+  border: none !important;
+  background: none !important;
+  transition: color 0.3s ease;
+}
+
+.clear-btn:hover {
+  color: #dc3545 !important;
+}
+
+.search-btn {
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.search-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.search-btn:not(:disabled):hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+/* Product Card Styles */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-image-container {
+  overflow: hidden;
+}
+
+.product-img {
+  transition: transform 0.3s ease;
+}
+
+.product-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-top: 1rem;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.1);
+}
+
+.quick-buy-btn {
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.3);
+}
+
+.product-card:hover .quick-buy-btn {
+  transform: translateY(0);
+}
+
+.quick-buy-btn:hover {
+  background-color: #ffcd39;
+  border-color: #ffcd39;
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 15px !important;
+  }
+
+  .search-input {
+    border-radius: 15px 15px 0 0 !important;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .search-btn {
+    border-radius: 0 0 15px 15px !important;
+    margin: 0 !important;
+  }
+
+  .product-overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .quick-buy-btn {
+    transform: translateY(0);
+  }
+}
+.carous_img {
+  height: 60vh;      /* 👈 fixed height for all carousel images */
+  object-fit: cover;  /* 👈 ensures images fill while keeping proportions */
+  width: 100%;        /* always span full width */
+}
