@@ -242,6 +242,10 @@
   width: 100%;        /* always span full width */
 }
 .cardSign{
-  margin-left: 400px;  
+  margin-left: 400px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;  
 
 }
