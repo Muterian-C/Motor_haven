@@ -241,7 +241,7 @@
   object-fit: cover;  /* 👈 ensures images fill while keeping proportions */
   width: 100%;        /* always span full width */
 }
-.cardsign{
+.cardSign{
   margin-left: 400px;
   min-height: 100vh;
   display: flex;
