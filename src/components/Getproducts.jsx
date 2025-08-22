@@ -673,36 +673,41 @@ const Getproducts = () => {
                                   ).toLocaleString()}
                                 </span>
                                 <div className="d-flex gap-3">
-                                  <button
-                                    className="btn px-4 py-3 fw-semibold"
-                                    style={{
-                                      background:
-                                        "linear-gradient(135deg, #10b981, #34d399)",
-                                      border: "none",
-                                      borderRadius: "16px",
-                                      color: "white",
-                                      fontSize: "1rem",
-                                      transition: "all 0.3s ease",
-                                      boxShadow:
-                                        "0 8px 25px rgba(16, 185, 129, 0.3)",
-                                    }}
-                                    onClick={() => handleAddToCart(product)}
-                                    onMouseEnter={(e) => {
-                                      e.target.style.transform =
-                                        "translateY(-2px)";
-                                      e.target.style.boxShadow =
-                                        "0 12px 35px rgba(16, 185, 129, 0.4)";
-                                    }}
-                                    onMouseLeave={(e) => {
-                                      e.target.style.transform =
-                                        "translateY(0)";
-                                      e.target.style.boxShadow =
-                                        "0 8px 25px rgba(16, 185, 129, 0.3)";
-                                    }}
-                                  >
-                                    <i className="fas fa-cart-plus me-2"></i>
-                                    Add to Cart
-                                  </button>
+                                <button
+                                className="btn w-50 py-3 fw-semibold"
+                                style={{
+                                  background:
+                                    "linear-gradient(135deg, #10b981, #34d399)",
+                                  border: "none",
+                                  borderRadius: "16px",
+                                  color: "white",
+                                  fontSize: "1rem",
+                                  transition: "all 0.3s ease",
+                                  boxShadow:
+                                    "0 8px 25px rgba(16, 185, 129, 0.3)",
+                                }}
+                                onClick={() => handleAddToCart(product)}
+                                onMouseEnter={(e) => {
+                                  e.target.style.transform = "translateY(-2px)";
+                                  e.target.style.boxShadow =
+                                    "0 12px 35px rgba(16, 185, 129, 0.4)";
+                                }}
+                                onMouseLeave={(e) => {
+                                  e.target.style.transform = "translateY(0)";
+                                  e.target.style.boxShadow =
+                                    "0 8px 25px rgba(16, 185, 129, 0.3)";
+                                }}
+                              >
+                                {isInCart(product.product_id) ? (
+                                  <>
+                                    Added({getItemQuantity(product.product_id)})
+                                  </>
+                                ) : (
+                                  <>Add To Cart</>
+                                )}
+                                <i className="fas fa-cart-plus me-2"></i>
+                                
+                              </button>
 
                                   <button
                                     className="btn px-4 py-3 fw-semibold"
