@@ -139,7 +139,7 @@ const Getproducts = () => {
               letterSpacing: "-0.02em",
             }}
           >
-            MOTOR HAVEN 🚗
+            MOTOR____HAVEN
           </h1>
           <p
             className="fs-2 text-light mb-4"
